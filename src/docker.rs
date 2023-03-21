@@ -2,7 +2,7 @@ use std::process::Command;
 use std::vec::Vec;
 use std::error::Error;
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct DockerImage {
     repository: String,
     tag: String,
